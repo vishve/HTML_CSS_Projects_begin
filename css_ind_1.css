@@ -1,0 +1,71 @@
+body{
+    margin: 0px; /* default margin set to 0 */
+    font-family: sans-serif;
+    display: flex; /* bring everything to center horizontally */
+    flex-direction: column; /* bring all content into  column */
+    align-items: center;/* //Bring everything to center horizontally */
+    height: 100vh;/* adjust the height to 100% of virtical height (vh) */
+    justify-content: center; /* finaly justify all to center */
+    background: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -mox-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+    /* all copied formweb to fixthe image size forever */
+
+
+    /*url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80") no-repeat center center fixed;*/
+    
+    /*url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");*/
+
+    /*url("https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");*/
+    /* url("https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");*/
+
+    overflow: hidden;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.clock {
+    display: flex;
+}
+
+.clock div {
+    margin: 5px;
+    position: relative;
+}
+.clock span {
+    width: 100px;
+    height: 60px;
+    background: slateblue;
+    opacity: .8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.clock .text {
+    height: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: 0.8;
+    
+}
+.clock #ampm {
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: green;
+}
