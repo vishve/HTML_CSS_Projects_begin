@@ -1,5 +1,5 @@
 // source: https://youtu.be/EWv2jnhZErc
-
+// other files associated: index1.html , css_ind_1.css, js_ind_1.js
 
 const hrE1= document.getElementById("hours")
 const minE1= document.getElementById("minutes")
