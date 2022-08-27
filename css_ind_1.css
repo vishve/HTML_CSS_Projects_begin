@@ -4,21 +4,26 @@
 
 body{
     margin: 0px; /* default margin set to 0 */
-    font-family: sans-serif;
+    font-family: sans-serif; /* for big, better font*/
     display: flex; /* bring everything to center horizontally */
     flex-direction: column; /* bring all content into  column */
     align-items: center;/* //Bring everything to center horizontally */
     height: 100vh;/* adjust the height to 100% of virtical height (vh) */
     justify-content: center; /* finaly justify all to center */
-    background: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -mox-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
+    
+    /* old formats .. image sizing start */
+    /* all copied formweb to fix image size forever */
+    -webkit-background-size: cover;     /* chrome should set the image to cover full web page */
+    -mox-background-size: cover; /* ie9 and above all browser should set the image to cover full web page */
+    -moz-background-size: cover; /* mozilla should set the image to cover full web page */
+   /* old formats .. end */
+   
+    background-size: cover; /* for fixing the image to fit the browser page */
+    overflow: hidden;  /* used to remove the scrollbar */
+    /* all copied formweb to fix image size forever worked fine after background URL*/
 
-    /* all copied formweb to fixthe image size forever */
-
-
+    background: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") no-repeat center center fixed;/* unplash.com has free hd images */
+    
     /*url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80") no-repeat center center fixed;*/
     
     /*url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");*/
@@ -26,7 +31,13 @@ body{
     /*url("https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");*/
     /* url("https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");*/
 
+    /* all copied formweb to fix image size forever old formats, now only one should work backgound image*/
+    -webkit-background-size: cover;
+    -mox-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
     overflow: hidden;
+        /* all copied formweb to fix image size forever worked fine after background URL*/
 }
 
 h2{
