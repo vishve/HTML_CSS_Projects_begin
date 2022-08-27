@@ -32,12 +32,13 @@ body{
     /* url("https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");*/
 
     /* all copied formweb to fix image size forever old formats, now only one should work backgound image*/
-    -webkit-background-size: cover;
+    -webkit-background-size: cover; 
     -mox-background-size: cover;
     -moz-background-size: cover;
+    /* all copied formweb to fix image size forever worked fine after background URL*/
     background-size: cover;
     overflow: hidden;
-        /* all copied formweb to fix image size forever worked fine after background URL*/
+    
 }
 
 h2{
